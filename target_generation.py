@@ -147,7 +147,8 @@ def load_ch4_dataset():
     #     raise RuntimeError('Dataset file is invalid.')
     # datafile = np.load(filename)
     #datafile = h5py.File('/beegfs/scratch/jchapman/CO2CH4TargetGen/dataset_ch4_full.hdf5', 'r', rdcc_nbytes=4194304)
-    datafile = h5py.File('./dataset_ch4_full.hdf5', 'r', rdcc_nbytes=4194304)
+    #datafile = h5py.File('/unity/ads/users/jfahlen/dataset_ch4_full.hdf5', 'r', rdcc_nbytes=4194304)
+    datafile = h5py.File('~/output/dataset_ch4_full.hdf5', 'r', rdcc_nbytes=4194304)
     return datafile['modtran_data'], datafile['modtran_param'], datafile['wave'], 'ch4'
 
 
