@@ -20,6 +20,7 @@ dependencies:
   - aws-c-s3=0.3.13=heb0bb06_2
   - aws-c-sdkutils=0.1.11=h862ab75_1
   - aws-checksums=0.1.16=h862ab75_1
+  - awscli
   - aws-crt-cpp=0.20.3=he9c0e7f_4
   - aws-sdk-cpp=1.10.57=hbc2ea52_17
   - backcall=0.2.0=pyhd3eb1b0_0

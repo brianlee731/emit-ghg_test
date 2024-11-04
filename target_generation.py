@@ -27,6 +27,7 @@ import argparse
 import spectral
 import h5py
 import pdb
+import os
 
 
 def check_param(value, min, max, name):
@@ -137,7 +138,7 @@ def spline_5deg_lookup(grid_data, zenith=0, sensor=120, ground=0, water=0, conc=
     return lookup.squeeze()
 
 
-def load_ch4_dataset(output):
+def load_ch4_dataset(filepath):
     # filename = 'modtran_ch4_full/dataset_ch4_full.npz'
     # correcthash = '6d2a7f0d566e5fd45221834b409d724a5397686a1686054f3d96e1f80e2d006d'
     # import hashlib
@@ -147,9 +148,9 @@ def load_ch4_dataset(output):
     #     raise RuntimeError('Dataset file is invalid.')
     # datafile = np.load(filename)
     #datafile = h5py.File('/beegfs/scratch/jchapman/CO2CH4TargetGen/dataset_ch4_full.hdf5', 'r', rdcc_nbytes=4194304)
-    datafile = h5py.File('/'.join(output.strip().split('/')[:-1]) + '/dataset_ch4_full.hdf5', 'r', rdcc_nbytes=4194304)
-    #datafile = h5py.File('/unity/ads/users/jfahlen/dataset_ch4_full.hdf5', 'r', rdcc_nbytes=4194304)
+    #datafile = h5py.File('/unity/ads/users/jfahlen/20230620t084426/dataset_ch4_full.hdf5', 'r', rdcc_nbytes=4194304)
     #datafile = h5py.File('~/output/dataset_ch4_full.hdf5', 'r', rdcc_nbytes=4194304)
+    datafile = h5py.File(f'{filepath}/dataset_ch4_full.hdf5', 'r', rdcc_nbytes=4194304)
     return datafile['modtran_data'], datafile['modtran_param'], datafile['wave'], 'ch4'
 
 
@@ -184,7 +185,7 @@ def load_pca_dataset():
 
 
 def generate_library(gas_concentration_vals, output, zenith=0, sensor=120, ground=0, water=0, order=1, dataset_fcn=load_ch4_dataset):
-    grid, params, wave, gas = dataset_fcn(output)
+    grid, params, wave, gas = dataset_fcn(os.path.dirname(output))
     rads = np.empty((len(gas_concentration_vals), grid.shape[-1]))
     for i, ppmm in enumerate(gas_concentration_vals):
         rads[i, :] = spline_5deg_lookup(
@@ -301,4 +302,3 @@ def main(input_args=None):
 
 if __name__ == '__main__':
     main()
-
