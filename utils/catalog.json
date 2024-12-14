@@ -1,0 +1,203 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+      ],
+      "id": "G2752958812-LPCLOUD",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              49.1431999,
+              51.1671677
+            ],
+            [
+              49.0286827,
+              50.4202499
+            ],
+            [
+              51.0070915,
+              50.1169128
+            ],
+            [
+              51.1216087,
+              50.8638306
+            ],
+            [
+              49.1431999,
+              51.1671677
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        49.0286827,
+        50.1169128,
+        51.1216087,
+        51.1671677
+      ],
+      "properties": {
+        "datetime": "2023-08-09T10:53:56Z",
+        "start_datetime": "2023-08-09T10:53:56.000Z",
+        "end_datetime": "2023-08-09T10:54:16.000Z",
+        "eo:cloud_cover": 0
+      },
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://cmr.earthdata.nasa.gov:443/search/concepts/G2752958812-LPCLOUD.stac"
+        },
+        {
+          "rel": "parent",
+          "href": "https://cmr.earthdata.nasa.gov:443/search/concepts/C2408009906-LPCLOUD.stac"
+        },
+        {
+          "rel": "collection",
+          "href": "https://cmr.earthdata.nasa.gov:443/search/concepts/C2408009906-LPCLOUD.stac"
+        },
+        {
+          "rel": "root",
+          "href": "https://cmr.earthdata.nasa.gov:443/search/"
+        },
+        {
+          "rel": "via",
+          "href": "https://cmr.earthdata.nasa.gov:443/search/concepts/G2752958812-LPCLOUD.json"
+        },
+        {
+          "rel": "via",
+          "href": "https://cmr.earthdata.nasa.gov:443/search/concepts/G2752958812-LPCLOUD.umm_json"
+        }
+      ],
+      "assets": {
+        "metadata": {
+          "href": "https://cmr.earthdata.nasa.gov:443/search/concepts/G2752958812-LPCLOUD.xml",
+          "type": "application/xml"
+        },
+        "browse": {
+          "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL1BRAD.001/EMIT_L1B_RAD_001_20230809T105356_2322107_002/EMIT_L1B_RAD_001_20230809T105356_2322107_002.png",
+          "type": "image/png",
+          "title": "Download EMIT_L1B_RAD_001_20230809T105356_2322107_002.png"
+        },
+        "opendap": {
+          "href": "https://opendap.earthdata.nasa.gov/collections/C2408009906-LPCLOUD/granules/EMIT_L1B_RAD_001_20230809T105356_2322107_002",
+          "title": "OPeNDAP request URL"
+        },
+        "data": {
+          "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL1BRAD.001/EMIT_L1B_RAD_001_20230809T105356_2322107_002/EMIT_L1B_RAD_001_20230809T105356_2322107_002.nc",
+          "title": "Download EMIT_L1B_RAD_001_20230809T105356_2322107_002.nc"
+        },
+        "data1": {
+          "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL1BRAD.001/EMIT_L1B_RAD_001_20230809T105356_2322107_002/EMIT_L1B_OBS_001_20230809T105356_2322107_002.nc",
+          "title": "Download EMIT_L1B_OBS_001_20230809T105356_2322107_002.nc"
+        }
+      },
+      "collection": "C2408009906-LPCLOUD"
+    },
+    {
+      "type": "Feature",
+      "stac_version": "1.0.0",
+      "stac_extensions": [
+        "https://stac-extensions.github.io/eo/v1.0.0/schema.json"
+      ],
+      "id": "G2752702895-LPCLOUD",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              49.1431999,
+              51.1671677
+            ],
+            [
+              49.0286827,
+              50.4202499
+            ],
+            [
+              51.0070915,
+              50.1169128
+            ],
+            [
+              51.1216087,
+              50.8638306
+            ],
+            [
+              49.1431999,
+              51.1671677
+            ]
+          ]
+        ]
+      },
+      "bbox": [
+        49.0286827,
+        50.1169128,
+        51.1216087,
+        51.1671677
+      ],
+      "properties": {
+        "datetime": "2023-08-09T10:53:56Z",
+        "start_datetime": "2023-08-09T10:53:56.000Z",
+        "end_datetime": "2023-08-09T10:54:16.000Z",
+        "eo:cloud_cover": 0
+      },
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://cmr.earthdata.nasa.gov:443/search/concepts/G2752702895-LPCLOUD.stac"
+        },
+        {
+          "rel": "parent",
+          "href": "https://cmr.earthdata.nasa.gov:443/search/concepts/C2408750690-LPCLOUD.stac"
+        },
+        {
+          "rel": "collection",
+          "href": "https://cmr.earthdata.nasa.gov:443/search/concepts/C2408750690-LPCLOUD.stac"
+        },
+        {
+          "rel": "root",
+          "href": "https://cmr.earthdata.nasa.gov:443/search/"
+        },
+        {
+          "rel": "via",
+          "href": "https://cmr.earthdata.nasa.gov:443/search/concepts/G2752702895-LPCLOUD.json"
+        },
+        {
+          "rel": "via",
+          "href": "https://cmr.earthdata.nasa.gov:443/search/concepts/G2752702895-LPCLOUD.umm_json"
+        }
+      ],
+      "assets": {
+        "metadata": {
+          "href": "https://cmr.earthdata.nasa.gov:443/search/concepts/G2752702895-LPCLOUD.xml",
+          "type": "application/xml"
+        },
+        "browse": {
+          "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-public/EMITL2ARFL.001/EMIT_L2A_RFL_001_20230809T105356_2322107_002/EMIT_L2A_RFL_001_20230809T105356_2322107_002.png",
+          "type": "image/png",
+          "title": "Download EMIT_L2A_RFL_001_20230809T105356_2322107_002.png"
+        },
+        "opendap": {
+          "href": "https://opendap.earthdata.nasa.gov/collections/C2408750690-LPCLOUD/granules/EMIT_L2A_RFL_001_20230809T105356_2322107_002",
+          "title": "OPeNDAP request URL"
+        },
+        "data": {
+          "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20230809T105356_2322107_002/EMIT_L2A_RFL_001_20230809T105356_2322107_002.nc",
+          "title": "Download EMIT_L2A_RFL_001_20230809T105356_2322107_002.nc"
+        },
+        "data1": {
+          "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20230809T105356_2322107_002/EMIT_L2A_RFLUNCERT_001_20230809T105356_2322107_002.nc",
+          "title": "Download EMIT_L2A_RFLUNCERT_001_20230809T105356_2322107_002.nc"
+        },
+        "data2": {
+          "href": "https://data.lpdaac.earthdatacloud.nasa.gov/lp-prod-protected/EMITL2ARFL.001/EMIT_L2A_RFL_001_20230809T105356_2322107_002/EMIT_L2A_MASK_001_20230809T105356_2322107_002.nc",
+          "title": "Download EMIT_L2A_MASK_001_20230809T105356_2322107_002.nc"
+        }
+      },
+      "collection": "C2408750690-LPCLOUD"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+    "stage_in": {
+        "stac_json": "https://raw.githubusercontent.com/GodwinShen/emit-ghg/main/test/catalog.json", 
+        "downloading_roles": "", 
+        "downloading_keys": "data, data1, data2",
+        "download_type": "DAAC",
+        "edl_username": "/sps/processing/workflows/edl_username",
+        "edl_password_type": "PARAM_STORE",
+        "edl_password": "/sps/processing/workflows/edl_password",
+        "unity_client_id": "",
+        "unity_stac_auth": "NONE"
+    },
+    "parameters": {
+        "output_collection": "urn:nasa:unity:emit:dev:emit_ghg_test___1"
+    },
+    "stage_out": { 
+        "staging_bucket": "emit-dev-unity-data",
+	"collection_id": "urn:nasa:unity:emit:dev:emit_ghg_test___1",
+        "result_path_prefix": "stage_out"
+    }
+}
