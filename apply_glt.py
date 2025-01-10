@@ -21,6 +21,7 @@ import numpy as np
 from osgeo import gdal
 from spectral.io import envi
 import pdb
+import os
 
 #from emit_utils.file_checks import envi_header
 from utils import write_bil_chunk, ReadAbstractDataSet
