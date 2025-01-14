@@ -442,4 +442,5 @@ dependencies:
     - xxhash==3.3.0
     - y-py==0.5.9
     - ypy-websocket==0.8.2
+    - git+https://github.com/emit-sds/emit-utils.git
 prefix: /tmp/miniconda/envs/isofit_env
